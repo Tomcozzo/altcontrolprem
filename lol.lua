@@ -1,5 +1,17 @@
 local CmdSettings = {}
 
+
+local Connections = {}
+
+local Services = {
+	["RP"] = game:GetService("ReplicatedStorage"),
+	["Players"] = game:GetService("Players"),
+}
+
+local Variables = {
+	Player = game.Players.LocalPlayer
+}
+
 local function AirLock(Type)
 	if CmdSettings["AirLock"] == nil and Type == true then
 		local BP = Variables["Player"].Character.HumanoidRootPart:FindFirstChild("AirLockBP")
