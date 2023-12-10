@@ -4,8 +4,7 @@ local CmdSettings = {}
 local Connections = {}
 
 local Services = {
-	["RP"] = game:GetService("ReplicatedStorage"),
-	["Players"] = game:GetService("Players"),
+	["Players"] = game:GetService("Players")
 }
 
 local Variables = {
