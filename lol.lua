@@ -478,22 +478,18 @@ if game.PlaceId == 2788229376 then
 
                             end
 
-                        end
 
-                        if finalMsg == getgenv().prefix .. "airlock" then
+                           if finalMsg == getgenv().prefix .. "airlock" then
+                               Airlock(true)
 
-                            if getgenv.airlock == false then
-                                getgenv().airlock = true
-                                if getgenv.airlock == true then
-                                    AirLock(true)
-                                end
-                            end
-                        else
-                            getgenv.airlock = false
-                            if getgenv.airlock == false then
+                           end
+
+                            if finalMsg == getgenv().prefix .. "stopairlock" then
                                 Airlock(false)
-                            end
+                             end
                         end
+
+               
                     end
                 end
 
